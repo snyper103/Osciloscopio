@@ -6,7 +6,7 @@ Este osciloscópio utiliza o ADC de 12 bits da blue pill, com uma taxa de amostr
 É necessário ter o Visual Studio Code instalado, juntamente com o PlatformIO, que é uma extensão do VSCode, também será necessário possuir uma Blue Pill e o MATLAB instalado.
 
 ### Execução
-Basta compilar o código e depois fazer o upload dele na Blue Pill.
+Basta compilar o código .c no platformIO e fazer o upload na blue pill, em seguida rode o script .m no matlab. Também será necessário definir no script do matlab a porta USB em que a blue pill está conectada.
 
 ### Funcionamento
-Basta compilar o código .c no platformIO e fazer o upload na blue pill, em seguida rode o script .m no matlab. o script irá enviar o caracter 'x' para blue pill, ao receber do Matlab o caracter ’x’, o microcontrolador enviará 128 amostras do sinal medido, e o matlab fará o plot do sinal.
+O script irá enviar o caracter 'x' para blue pill, ao receber do Matlab o caracter ’x’, o microcontrolador enviará 128 amostras do sinal medido, e o matlab fará o plot do sinal.
